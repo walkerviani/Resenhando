@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="EDITAR RESENHA"
+            android:textColor="#673AB7"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/editImagem"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:background="@drawable/border_image"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/add_photo"
+            android:padding="80dp"
+            />
+
+        <RatingBar
+            android:id="@+id/editRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:numStars="5"
+            android:layout_gravity="center"
+            android:stepSize="0.5"
+            android:rating="0"
+            android:progressTint="#FFC107"
+            android:progressBackgroundTint="#878787"
+            android:secondaryProgressTint="#FFC107"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição"
+            android:paddingTop="5dp"
+            app:counterMaxLength="150"
+            app:counterEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="4"
+                android:gravity="top"
+                android:maxLength="150"
+                android:inputType="textMultiLine"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/editarResenha"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#673AB7"
+            android:text="SALVAR"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+
+        <Button
+            android:id="@+id/editarVoltarBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#3F51B5"
+            android:text="VOLTAR"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="70dp"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
