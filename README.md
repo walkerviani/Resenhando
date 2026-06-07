@@ -10,6 +10,9 @@ O **Resenhando** é um app mobile que permite criar resenhas pessoais sobre livr
 
 <img src="https://github.com/walkerviani/assets/blob/main/add_resenha_resenhando.png" width="300"/>
 
+## Download
+[⬇️ Baixar APK](https://github.com/walkerviani/Resenhando/releases/tag/v1.0)
+
 ## Licença
 
-Este projeto está sob a licença MIT.
+Este projeto está sob a [licença MIT](LICENSE).
